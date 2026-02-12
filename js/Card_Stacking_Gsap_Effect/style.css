@@ -1,0 +1,20 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {background-color: #eeeeee; font-size: 1rem; color: #292929; font-family: sans-serif; line-height: 1.5; transition: color 0.3s, background-color 0.3s;}
+h2 {font-size: 2rem; font-weight: 700; line-height: 1.2; margin-top: 0; margin-bottom: 1rem;}
+.heading {height: 50vh; font-size: 2.5rem; text-shadow: 0.04em 0.04rem 0 #81b5ab; display: flex; justify-content: center; align-items: center;}
+.section {overflow: hidden;}
+.wrapper {height: 100vh;}
+.list {position: relative; height: 100%; padding: 0.2rem; display: flex; justify-content: flex-start; align-items: center;}
+.item {position: absolute; inset: 0%; width: 100vw; height: 100%; box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 24px; overflow: hidden; display: flex;}
+.item_number {position: absolute; left: 3rem; top: 6rem; width: 3rem; height: 3rem; background-color: #000; border-radius: 50%; margin-bottom: 0.5rem; font-size: 1.5rem; color: #fff; font-weight: 400; display: flex; justify-content: center; align-items: center;}
+.item_content {position: relative; width: 50%; background-color: #fff; color: #292929; padding: 3rem; display: flex; justify-content: center; align-items: flex-start; flex-flow: column;}
+.item_media {width: 50%; height: 100%; object-fit: cover;}
+.padding-global {padding-left: 2.5rem; padding-right: 2.5rem;}
+.padding-vertical {padding: 2rem;}
+
+@media (max-width: 575.98px) {
+  .heading {font-size: 2.5rem;}
+  .item {display: flex; flex-direction: column;}
+  .item_content, .item_media {width: 100%; height: 50vh; padding-top: 0; padding-bottom: 0;}
+  .item_number {font-size: 0.5rem; top: 1.5rem;}
+}
